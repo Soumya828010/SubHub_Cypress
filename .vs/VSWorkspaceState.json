@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\cypress",
+    "\\cypress\\e2e",
+    "\\cypress\\e2e\\features",
+    "\\cypress\\e2e\\pages",
+    "\\cypress\\e2e\\pages\\CreateNewCustomerPage",
+    "\\cypress\\e2e\\pages\\CreateNewProposalPage",
+    "\\cypress\\support",
+    "\\cypress\\support\\step_definitions"
+  ],
+  "SelectedNode": "\\cypress",
+  "PreviewInSolutionExplorer": false
+}

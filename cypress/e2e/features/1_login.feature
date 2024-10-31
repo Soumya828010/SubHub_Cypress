@@ -10,4 +10,4 @@ Feature: Login
 
     Examples:
       | username | password |
-      | johndoe  | Pass123 |
+      | soumya.das@expansionjs.com  | Soumya@1992 |
