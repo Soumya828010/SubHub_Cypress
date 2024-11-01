@@ -1,6 +1,6 @@
 Feature: Create New Customer
 
-@run_this
+
   Scenario Outline: Create a new Customer Job Type as "Solar"
     Given I am on the login page
     When I type in my username "<username>"

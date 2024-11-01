@@ -19,6 +19,7 @@
     "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^12.17.4",
+    "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.3.0",
     "cypress-xpath": "^2.0.1",
     "eslint": "^9.13.0",
@@ -27,8 +28,5 @@
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/step_definitions/",
     "nonGlobalStepDefinitions": false
-  },
-  "dependencies": {
-    "cypress-iframe": "^1.0.1"
   }
 }
