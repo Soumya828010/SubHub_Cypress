@@ -3,17 +3,22 @@ const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
 const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
-
-    module.exports = defineConfig({
-        viewportWidth: 1280,  // Set default width
-        viewportHeight: 720,  // Set default height
-        // Other configuration options
+module.exports = defineConfig({
+    viewportWidth: 1280,  // Set default width
+    viewportHeight: 720,  // Set default height
     projectId: "nvh163",
     e2e: {
         baseUrl: "https://staging.subcontractorhub.com/auth/login",
         setupNodeEvents(on, config) {
-            on("file:preprocessor", createBundler({plugins: [createEsbuildPlugin.default(config)],}));
+            // Register the bundler and preprocessor
+            on("file:preprocessor", createBundler({
+                plugins: [createEsbuildPlugin.default(config)],
+            }));
+
+            // Add Cucumber preprocessor plugin
             preprocessor.addCucumberPreprocessorPlugin(on, config);
+            require('cypress-mochawesome-reporter/plugin')(on);
+
             return config;
         },
         specPattern: "**/*.feature",

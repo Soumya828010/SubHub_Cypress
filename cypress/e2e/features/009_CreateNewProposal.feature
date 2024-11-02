@@ -102,7 +102,7 @@ Feature: Create New Proposal Page
     When I Click on an Existing Customer
     When I click on New Proposal button
     When I Select Job Type dropdown
-    When I Select Job Type as Roof With Solar
+    When i Select Job Type Roof with Solar
     When I click on Create Proposal button
 
 

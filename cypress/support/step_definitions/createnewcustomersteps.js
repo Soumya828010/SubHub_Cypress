@@ -24,6 +24,9 @@ When('i Enter email {string}', (value) => {
 When('i Enter Phone Number {string}', (value) => {
     createNewCustomerPage.TypeInPhoneNumberTextbox(value)
 })
+When('i Select Job Type from DropDown', () => {
+    createNewCustomerPage.JobTypeDropDown()
+})
 When('i Select Job Type as solar', () => {
     createNewCustomerPage.TypeInJobTypeSolar()
 })

@@ -40,24 +40,26 @@ class CreateNewCustomerPage {
     TypeInPhoneNumberTextbox(value) {
         return cy.get(elements.NEWCUSTOMERPAGE.PHONE_NUMBER_TEXT).type(value)
     }
+    JobTypeDropDown() {
+        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_DROPDOWN).click()
+    }
     TypeInJobTypeSolar() {
-        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_DROPDOWN).click().focus().wait(5000).type('{enter}')
-        
+        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_VALUE).eq(0).should('be.visible').click({ force: true })
     }
     TypeInJobTypeRoof() {
-        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_DROPDOWN).click().focus().wait(5000).type('{downArrow}').type('{enter}')
+        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_VALUE).eq(1).should('be.visible').click({ force: true })
     }
     TypeInJobTypeHvac() {
-        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_DROPDOWN).click().focus().wait(5000).type('{downArrow}{downArrow}').type('{enter}')
+        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_VALUE).eq(2).should('be.visible').click({ force: true })
     }
     TypeInJobTypeFence() {
-        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_DROPDOWN).click().focus().wait(5000).type('{downArrow}{downArrow}{downArrow}').type('{enter}')
+        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_VALUE).eq(3).should('be.visible').click({ force: true })
     }
     TypeInJobTypeBattery() {
-        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_DROPDOWN).click().focus().wait(5000).type('{downArrow}{downArrow}{downArrow}{downArrow}').type('{enter}')
+        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_VALUE).eq(4).should('be.visible').click({ force: true })
     }
     TypeInJobTypeRoofwithSolar() {
-        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_DROPDOWN).click().focus().wait(5000).type('{downArrow}{downArrow}{downArrow}{downArrow}{downArrow}').type('{enter}')
+        return cy.get(elements.NEWCUSTOMERPAGE.JOB_TYPE_VALUE).eq(5).should('be.visible').click({ force: true })
     }
 
 

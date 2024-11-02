@@ -13,8 +13,8 @@ module.exports = {
         LASTNAME_TEXT: "salestool-input[formcontrolname='last_name']",
         EMAIL_TEXT: "salestool-input[formcontrolname='email']",
         PHONE_NUMBER_TEXT: "salestool-input[formcontrolname='phone']",
-        JOB_TYPE_DROPDOWN: "#mat-select-16",
-        JOB_TYPE_SOLAR: "#mat-option-262",
+        JOB_TYPE_DROPDOWN: "mat-form-field.salestool__inputCustom.mat-primary.mat-form-field-type-mat-select.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-hide-placeholder",
+        JOB_TYPE_VALUE: "mat-option > span.mat-option-text",
         CREATE_CUSTOMER: "button[type='submit']"
     }
 }

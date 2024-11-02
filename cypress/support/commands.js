@@ -8,11 +8,8 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //Cypress.Commands.add('getIframeBody', (iframeSelector) => {
-import 'çypress-iframe';
-Cypress.commands.add('getIframe', (selector) => {
-    return cy.get(selector).its('0.contentDocument.body').then(cy.wrap);
-});
-//
+import 'cypress-iframe';
+
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
