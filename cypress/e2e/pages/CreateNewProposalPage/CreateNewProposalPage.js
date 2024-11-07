@@ -10,7 +10,7 @@ class CreateNewProposalPage {
         return cy.get(elements.NEWPROPOSALPAGE.EXISTING_CUSTOMER).eq(0).should('be.visible').click()
     }
     clickonnewproposal() {
-        return cy.get(elements.NEWPROPOSALPAGE.NEW_PROPOSAL_BUTTON).eq(0).should('be.visible').click()
+        return cy.get(elements.NEWPROPOSALPAGE.NEW_PROPOSAL_BUTTON).eq(0).wait(10000).should('be.visible').click()
     }
     clickjobtypedropdown() {
         return cy.get(elements.NEWPROPOSALPAGE.JOB_TYPE_DROPDOWN).click()

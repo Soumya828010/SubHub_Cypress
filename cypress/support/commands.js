@@ -9,7 +9,13 @@
 // ***********************************************
 //Cypress.Commands.add('getIframeBody', (iframeSelector) => {
 import 'cypress-iframe';
+Cypress.Commands.add('getIframeBody', (iframeSelector) => {
+    return cy
+        .get(iframeSelector).its('0.contentDocument.body')
+        .should('not.be.empty')
+        .then(cy.wrap);
 
+})
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
