@@ -8,6 +8,7 @@ module.exports = defineConfig({
     viewportHeight: 720,  // Set default height
     projectId: "nvh163",
     e2e: {
+        "watchForFileChanges": true,
         chromeWebSecurity: false,
         baseUrl: "https://staging.subcontractorhub.com/auth/login",
         setupNodeEvents(on, config) {

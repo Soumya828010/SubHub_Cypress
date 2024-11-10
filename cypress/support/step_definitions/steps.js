@@ -1,11 +1,11 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor'
 import LoginPage from '../../e2e/pages/loginPage/LoginPage'
 //import SignUpPage from '../../e2e/pages/signUpPage/SignUpPage'
-import HomePage from '../../e2e/pages/homePage/HomePage'
+//import HomePage from '../../e2e/pages/homePage/HomePage'
 
 const loginPage = new LoginPage()
 //const signUpPage = new SignUpPage()
-const homePage = new HomePage()
+//const homePage = new HomePage()
 
 Given('I am on the login page', () => {
     cy.visit('https://staging.subcontractorhub.com/auth/login')
